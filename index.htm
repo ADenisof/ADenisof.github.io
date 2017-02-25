@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/classes-ie.css"/>
     <link rel="stylesheet" type="text/css" href="css/layout-ie.css"/>
     <![endif]-->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <title></title>
@@ -27,7 +27,7 @@ function check_me()
     with(document.test) {
 if (!Q1[0].checked&&!Q1[1].checked&&!Q1[2].checked&&!Q1[3].checked)  
 {count+=1};  
-if (count>0) alert("Вы выполнили не все задания. Проверьте себя!")    
+if (count>0) alert("Р’С‹ РІС‹РїРѕР»РЅРёР»Рё РЅРµ РІСЃРµ Р·Р°РґР°РЅРёСЏ. РџСЂРѕРІРµСЂСЊС‚Рµ СЃРµР±СЏ!")    
         else answer();
     }
 } 
@@ -51,12 +51,12 @@ function showResult()   {
     var i,s;
  
 for (i=0; i<answ.length;i++) {nok+=answ.charAt(i)=="1"?1:0;}
-if(nok==1) s="ОТЛИЧНО";
-if(nok<1) s="ХОРОШО";
-if(nok<0.75) s="УДОВЛЕТВОРИТЕЛЬНО";
-if (nok<0.5) s="НЕУДОВЛЕТВОРИТЕЛЬНО";
+if(nok==1) s="РћРўР›РР§РќРћ";
+if(nok<1) s="РҐРћР РћРЁРћ";
+if(nok<0.75) s="РЈР”РћР’Р›Р•РўР’РћР РРўР•Р›Р¬РќРћ";
+if (nok<0.5) s="РќР•РЈР”РћР’Р›Р•РўР’РћР РРўР•Р›Р¬РќРћ";
     document.test.s1.
-    value="Количество правильных ответов "+nok+". Ваша оценка "+s+". Посмотрите на окно рядом с номером вопроса. Если ответ правильный, там (+). Если ответ ошибочен, там (-).";
+    value="РљРѕР»РёС‡РµСЃС‚РІРѕ РїСЂР°РІРёР»СЊРЅС‹С… РѕС‚РІРµС‚РѕРІ "+nok+". Р’Р°С€Р° РѕС†РµРЅРєР° "+s+". РџРѕСЃРјРѕС‚СЂРёС‚Рµ РЅР° РѕРєРЅРѕ СЂСЏРґРѕРј СЃ РЅРѕРјРµСЂРѕРј РІРѕРїСЂРѕСЃР°. Р•СЃР»Рё РѕС‚РІРµС‚ РїСЂР°РІРёР»СЊРЅС‹Р№, С‚Р°Рј (+). Р•СЃР»Рё РѕС‚РІРµС‚ РѕС€РёР±РѕС‡РµРЅ, С‚Р°Рј (-).";
  
 with(document.test)
     {
@@ -69,32 +69,32 @@ function showhide(obj){
 }
 // ]]>
 </script>
-<center><b>Гео</b></center><br/><br/>
+<center><b>Р“РµРѕ</b></center><br/><br/>
 &nbsp;&nbsp;&nbsp;<span style="color:#006699;text-decoration:underline;cursor:pointer;" onclick="document.getElementById('instruction').style.display = showhide(document.getElementById('instruction').style.display)">
-Инструкция</span>
+РРЅСЃС‚СЂСѓРєС†РёСЏ</span>
  <br/>
 <div id="instruction" style="display: none; width: 100%;">
 <ul>
-<li>Выберите один из вариантов в каждом из 1 вопросов;</li>
-<li>Нажмите на кнопку "Показать результат";</li>
-<li>Скрипт не покажет результат, пока Вы не ответите на все вопросы;</li>
-<li>Загляните в окно рядом с номером задания. Если ответ правильный, то там (+). Если Вы ошиблись, там (-).</li>
-<li>За каждый правильный ответ начисляется 1 балл;</li>
-<li>Оценки: менее 0.5 баллов - НЕУДОВЛЕТВОРИТЕЛЬНО, от 0.5 но менее 0.75 - УДОВЛЕТВОРИТЕЛЬНО, 0.75 и менее 1 - ХОРОШО, 1 - ОТЛИЧНО;</li>
-<li>Чтобы сбросить результат тестирования, нажать кнопку "Сбросить ответы";</li>
+<li>Р’С‹Р±РµСЂРёС‚Рµ РѕРґРёРЅ РёР· РІР°СЂРёР°РЅС‚РѕРІ РІ РєР°Р¶РґРѕРј РёР· 1 РІРѕРїСЂРѕСЃРѕРІ;</li>
+<li>РќР°Р¶РјРёС‚Рµ РЅР° РєРЅРѕРїРєСѓ "РџРѕРєР°Р·Р°С‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚";</li>
+<li>РЎРєСЂРёРїС‚ РЅРµ РїРѕРєР°Р¶РµС‚ СЂРµР·СѓР»СЊС‚Р°С‚, РїРѕРєР° Р’С‹ РЅРµ РѕС‚РІРµС‚РёС‚Рµ РЅР° РІСЃРµ РІРѕРїСЂРѕСЃС‹;</li>
+<li>Р—Р°РіР»СЏРЅРёС‚Рµ РІ РѕРєРЅРѕ СЂСЏРґРѕРј СЃ РЅРѕРјРµСЂРѕРј Р·Р°РґР°РЅРёСЏ. Р•СЃР»Рё РѕС‚РІРµС‚ РїСЂР°РІРёР»СЊРЅС‹Р№, С‚Рѕ С‚Р°Рј (+). Р•СЃР»Рё Р’С‹ РѕС€РёР±Р»РёСЃСЊ, С‚Р°Рј (-).</li>
+<li>Р—Р° РєР°Р¶РґС‹Р№ РїСЂР°РІРёР»СЊРЅС‹Р№ РѕС‚РІРµС‚ РЅР°С‡РёСЃР»СЏРµС‚СЃСЏ 1 Р±Р°Р»Р»;</li>
+<li>РћС†РµРЅРєРё: РјРµРЅРµРµ 0.5 Р±Р°Р»Р»РѕРІ - РќР•РЈР”РћР’Р›Р•РўР’РћР РРўР•Р›Р¬РќРћ, РѕС‚ 0.5 РЅРѕ РјРµРЅРµРµ 0.75 - РЈР”РћР’Р›Р•РўР’РћР РРўР•Р›Р¬РќРћ, 0.75 Рё РјРµРЅРµРµ 1 - РҐРћР РћРЁРћ, 1 - РћРўР›РР§РќРћ;</li>
+<li>Р§С‚РѕР±С‹ СЃР±СЂРѕСЃРёС‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ, РЅР°Р¶Р°С‚СЊ РєРЅРѕРїРєСѓ "РЎР±СЂРѕСЃРёС‚СЊ РѕС‚РІРµС‚С‹";</li>
 </ul>
 </div>
 <form name="test"><ol>
-<li><INPUT type="text" size="1" value="" name="T1"/><b> Череповец</b><br/>
-<input type="radio" value="0" name="Q1"/> Черная<br />
-<input type="radio" value="1" name="Q1"/> Белая<br />
-<input type="radio" value="2" name="Q1"/> Зеленая<br />
-<input type="radio" value="3" name="Q1"/> Красная<br />
+<li><INPUT type="text" size="1" value="" name="T1"/><b> Р§РµСЂРµРїРѕРІРµС†</b><br/>
+<input type="radio" value="0" name="Q1"/> Р§РµСЂРЅР°СЏ<br />
+<input type="radio" value="1" name="Q1"/> Р‘РµР»Р°СЏ<br />
+<input type="radio" value="2" name="Q1"/> Р—РµР»РµРЅР°СЏ<br />
+<input type="radio" value="3" name="Q1"/> РљСЂР°СЃРЅР°СЏ<br />
 <br/></li></ol>      
 <CENTER>
 <P><TEXTAREA name="s1" rows="4" cols="70" readonly> </TEXTAREA> </P>
-<INPUT onclick="check_me()" type="button" value="Показать результат"/>&nbsp;&nbsp;&nbsp;&nbsp; 
-<INPUT type="reset" value="Сбросить ответы"/> 
+<INPUT onclick="check_me()" type="button" value="РџРѕРєР°Р·Р°С‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚"/>&nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT type="reset" value="РЎР±СЂРѕСЃРёС‚СЊ РѕС‚РІРµС‚С‹"/> 
 </CENTER>        
 </form> 
 <!-- Test created by service http://test.fromgomel.com -->
